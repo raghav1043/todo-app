@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+</head>
+<body>
+    <div>
+    {% block content %}
+        <br>
+        <form method="POST">
+            {% csrf_token %}
+            {{form.as_p}}
+            <button class="btn">Login</button>
+        </form>
+
+        If you don't have an account <a href="/register" target="blank"><strong>register</strong></a> instead.
+        <br>
+        Go to hoempage <a href="/" target="blank"><strong>Home</strong></a>.
+
+    {% endblock %}
+    </div>
+</div>
+</body>
+</html>

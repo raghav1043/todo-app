@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+</head>
+<body>
+	<div class="container">
+	{% block content %}
+		<br>
+	    <form method="POST">
+	        {% csrf_token %}
+	        {{form.as_p}}
+	        <button class="btn">Register</button>
+	    </form>
+
+	    If you already have an account <a href="/login" target="blank"><strong>login</strong></a> instead.
+	    Go to hoempage <a href="/index" target="blank"><strong>Home</strong></a>.
+	    <br>
+        Go to hoempage <a href="/" target="blank"><strong>Home</strong></a>.
+
+
+	{% endblock %}
+</div>
+</body>
+</html>
+
